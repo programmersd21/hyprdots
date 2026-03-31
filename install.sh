@@ -14,7 +14,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm --needed \
     hyprland hyprpaper hypridle hyprlock \
     python-pywal waybar rofi-wayland kitty \
-    starship cava fastfetch swaync \
+    starship cava cmatrix btop fzf fastfetch swaync \
     inter-font ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols \
     zsh neovim git curl wget jq bc wl-clipboard \
     grim slurp swappy brightnessctl playerctl \
@@ -22,7 +22,7 @@ sudo pacman -S --noconfirm --needed \
     wf-recorder libnotify imagemagick cliphist wtype networkmanager network-manager-applet bluez bluez-utils blueman
 
 # Install AUR packages
-yay -S --noconfirm --needed nwg-dock-hyprland rofi-bluetooth
+yay -S --noconfirm --needed nwg-dock-hyprland rofi-bluetooth yazi-git oh-my-posh-bin
 
 # Directories
 mkdir -p "$HOME/.config"
