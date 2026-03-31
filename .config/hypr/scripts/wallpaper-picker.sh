@@ -47,7 +47,7 @@ selected=$(build_entries | rofi \
     -dmenu \
     -i \
     -p "󰸉  Wallpaper" \
-    -theme ~/.config/hypr/rofi/wallpaper-picker.rasi \
+    -theme ~/.config/rofi/wallpaper-picker.rasi \
     -show-icons \
     -icon-size 72 \
     -eh 2)

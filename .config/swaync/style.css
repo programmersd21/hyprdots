@@ -1,29 +1,6 @@
-@import "../hypr/waybar/colors.css";
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* swaync colors - wallust from waybar.css */
 
-* {
-    font-family: 'Inter', 'JetBrains Mono Nerd Font';
-}
-
-.control-center {
-    background: alpha(@background, 0.9);
-    border: 2px solid @color4;
-    border-radius: 15px;
-}
-
-.notification-row {
-    outline: none;
-    margin: 10px;
-    padding: 0;
-}
-
-.notification {
-    background: alpha(@color0, 0.5);
-    border-radius: 12px;
-    margin: 0px;
-}
-
-.notification-content {
-    background: transparent;
-    padding: 10px;
-    border-radius: 12px;
-}
+@import '../../.config/waybar/colors.css';
+@import 'themes/control_center.css';
+@import 'themes/notifications.css';

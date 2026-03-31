@@ -58,7 +58,7 @@ backup_and_copy "shell/.profile" "$HOME/.profile"
 
 # Make scripts executable
 find "$HOME/.config/hypr/scripts"        -type f -name "*.sh" -exec chmod +x {} \;
-find "$HOME/.config/hypr/waybar/scripts" -type f -name "*.sh" -exec chmod +x {} \;
+find "$HOME/.config/waybar/scripts" -type f -name "*.sh" -exec chmod +x {} \;
 
 # Set up pywal and initial wallpaper
 wal -i "$HOME/wallpapers/Green-Mast.png" -n

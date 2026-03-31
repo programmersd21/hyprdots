@@ -43,7 +43,7 @@ chosen=$(build_entries | rofi \
     -dmenu \
     -i \
     -p "󰅇  Clipboard" \
-    -theme ~/.config/hypr/rofi/clipboard.rasi \
+    -theme ~/.config/rofi/clipboard.rasi \
     -kb-custom-1 "Alt+p" \
     -mesg "Enter: paste  •  Alt+P: pin / unpin")
 

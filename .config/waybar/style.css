@@ -13,12 +13,14 @@ window#waybar {
 }
 
 #workspaces, #clock, #network, #pulseaudio, #battery, #tray,
-#custom-launcher, #custom-powermenu, #custom-cpu, #custom-ram, #custom-weather {
-    background-color: alpha(@background, 0.8);
-    border-radius: 12px;
-    padding: 0 12px;
+#custom-launcher, #custom-power, #custom-cpu, #custom-ram, #custom-weather,
+#group-laptop, #group-audio, #group-connections, #keyboard-state {
+    background-color: alpha(@background, 0.75);
+    border: 1px solid alpha(@color4, 0.15);
+    border-radius: 14px;
+    padding: 0 14px;
     margin: 4px 4px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 #custom-launcher {
@@ -31,7 +33,7 @@ window#waybar {
     color: @color7;
     padding: 0 8px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 #workspaces button.active {
@@ -43,7 +45,14 @@ window#waybar {
     background-color: alpha(@color4, 0.5);
 }
 
-#custom-powermenu {
+#custom-power {
     color: @color1;
     padding: 0 14px;
+}
+
+tooltip {
+    background: alpha(@background, 0.9);
+    color: @foreground;
+    border-radius: 10px;
+    padding: 6px 10px;
 }

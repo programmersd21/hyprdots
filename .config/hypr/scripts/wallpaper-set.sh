@@ -26,9 +26,9 @@ cp ~/.cache/wal/gtk.css ~/.config/gtk-4.0/gtk.css
 mkdir -p ~/.config/cava
 cp ~/.cache/wal/cava.conf ~/.config/cava/config
 
-mkdir -p ~/.config/hypr/waybar
+mkdir -p ~/.config/waybar
 if [ -f ~/.cache/wal/waybar.css ]; then
-    cp ~/.cache/wal/waybar.css ~/.config/hypr/waybar/colors.css
+    cp ~/.cache/wal/waybar.css ~/.config/waybar/colors.css
 fi
 
 killall -SIGUSR2 waybar 2>/dev/null || true

@@ -1,0 +1,18 @@
+// Fusion user modules
+{
+  "custom/launcher": {
+    "format": "󰣇",
+    "on-click": "$HOME/.config/hypr/scripts/rofi-launcher.sh",
+    "tooltip": false
+  },
+  "custom/cpu": {
+    "exec": "$HOME/.config/waybar/scripts/cpu.sh",
+    "interval": 5,
+    "format": "󰍛 {}"
+  },
+  "custom/ram": {
+    "exec": "$HOME/.config/waybar/scripts/ram.sh",
+    "interval": 5,
+    "format": "󰾆 {}"
+  }
+}

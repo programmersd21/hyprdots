@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # rofi-keybinds.sh
-# Parses every bind/bindm line from ~/.config/hypr/config.d/*.conf,
+# Parses every bind/bindm line from ~/.config/hypr/configs/*.conf,
 # formats them into a searchable cheat-sheet in rofi.
 # Selecting an entry copies the keybind combo to the clipboard.
 
-CONF_DIR="$HOME/.config/hypr/config.d"
+CONF_DIR="$HOME/.config/hypr/configs"
 
 # ── pretty dispatcher labels ──────────────────────────────────────────────────
 label_dispatcher() {
@@ -100,7 +100,7 @@ chosen=$(build_entries | rofi \
     -dmenu \
     -i \
     -p "⌨  Keybinds" \
-    -theme ~/.config/hypr/rofi/keybinds.rasi \
+    -theme ~/.config/rofi/keybinds.rasi \
     -no-custom \
     -mesg "Search keybindings  •  Enter: copy combo to clipboard")
 

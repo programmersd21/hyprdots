@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rofi -show drun -theme ~/.config/hypr/rofi/launcher.rasi
+rofi -show drun -theme ~/.config/rofi/launcher.rasi
