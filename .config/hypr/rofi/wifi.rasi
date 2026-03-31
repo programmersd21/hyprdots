@@ -1,0 +1,48 @@
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+
+window {
+    width: 400px;
+    border-radius: 12px;
+    background-color: @background;
+    border: 2px solid;
+    border-color: @color6;
+    padding: 15px;
+}
+
+mainbox {
+    spacing: 10px;
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius: 8px;
+    padding: 10px;
+    text-color: @foreground;
+    children: [ entry ];
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Connect to WiFi...";
+}
+
+listview {
+    lines: 6;
+    background-color: transparent;
+    spacing: 4px;
+}
+
+element {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @color6;
+    text-color: @background;
+}

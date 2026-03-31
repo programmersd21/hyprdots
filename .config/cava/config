@@ -1,0 +1,13 @@
+# This file is overwritten on every wallpaper change by wallpaper-set.sh
+# using the pywal template at ~/.config/wal/templates/cava.conf.
+# Edit that template to make permanent changes.
+
+[color]
+background = '#1a1b26'
+foreground = '#c0caf5'
+color_1 = '#7aa2f7'
+color_2 = '#7dcfff'
+color_3 = '#bb9af7'
+color_4 = '#9ece6a'
+color_5 = '#e0af68'
+color_6 = '#f7768e'

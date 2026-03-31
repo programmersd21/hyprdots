@@ -1,0 +1,62 @@
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+@import "shared/spacing.rasi"
+
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    display-drun: " ";
+}
+
+window {
+    width: 600px;
+    border-radius: 15px;
+    background-color: @background;
+    border: 2px solid;
+    border-color: @color4;
+    padding: 20px;
+}
+
+mainbox {
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius: 10px;
+    padding: 12px;
+    text-color: @foreground;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @color4;
+    background-color: transparent;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Search applications...";
+    placeholder-color: @color8;
+}
+
+listview {
+    lines: 6;
+    background-color: transparent;
+    spacing: 5px;
+    border: 0px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @color4;
+    text-color: @background;
+}

@@ -1,0 +1,109 @@
+/**
+ * clipboard.rasi
+ * Clipboard history picker.
+ * Pinned entries (prefixed 📌) appear at top with a warm accent.
+ */
+
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+
+configuration {
+    modi:       "dmenu";
+    show-icons: false;
+}
+
+window {
+    width:            640px;
+    border-radius:    14px;
+    background-color: @background;
+    border:           2px solid;
+    border-color:     @color3;
+    padding:          20px;
+}
+
+mainbox {
+    spacing:          12px;
+    background-color: transparent;
+    children:         [ inputbar, message, listview ];
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius:    10px;
+    padding:          11px 14px;
+    text-color:       @foreground;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @color3;
+    background-color: transparent;
+    padding:          0 8px 0 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @foreground;
+    placeholder:      "Search clipboard...";
+    placeholder-color: @color8;
+}
+
+message {
+    background-color: transparent;
+    padding:          0 2px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @color8;
+    font:             "JetBrains Mono Nerd Font 10";
+}
+
+listview {
+    lines:            12;
+    columns:          1;
+    background-color: transparent;
+    spacing:          4px;
+    border:           0px;
+    scrollbar:        true;
+    fixed-height:     true;
+}
+
+scrollbar {
+    width:            4px;
+    border:           0px;
+    handle-width:     4px;
+    handle-color:     @color8;
+    background-color: transparent;
+}
+
+element {
+    padding:          9px 12px;
+    border-radius:    8px;
+    background-color: transparent;
+    text-color:       @foreground;
+    font:             "JetBrains Mono Nerd Font 11";
+    /* truncate long entries */
+    max-width:        600px;
+}
+
+/* pinned items get a warm yellow tint */
+element normal.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element selected.normal {
+    background-color: alpha(@color3, 0.18);
+    text-color:       @foreground;
+    border:           1px solid;
+    border-color:     @color3;
+    border-radius:    8px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+    highlight:        bold @color3;
+}

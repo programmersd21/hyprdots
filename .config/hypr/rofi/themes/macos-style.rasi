@@ -1,0 +1,8 @@
+* {
+    background: rgba(255, 255, 255, 0.8);
+    background-alt: rgba(200, 200, 200, 0.5);
+    foreground: #1d1d1f;
+    color4: #007aff;
+    color1: #ff3b30;
+    color8: #86868b;
+}

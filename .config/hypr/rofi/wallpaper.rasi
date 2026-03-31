@@ -1,0 +1,61 @@
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+
+configuration {
+    modi: "dmenu";
+    show-icons: false;
+}
+
+window {
+    width: 800px;
+    border-radius: 15px;
+    background-color: @background;
+    border: 2px solid;
+    border-color: @color4;
+    padding: 20px;
+}
+
+mainbox {
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius: 10px;
+    padding: 12px;
+    text-color: @foreground;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @color4;
+    background-color: transparent;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Search wallpaper...";
+    placeholder-color: @color8;
+}
+
+listview {
+    lines: 8;
+    columns: 2;
+    background-color: transparent;
+    spacing: 10px;
+    border: 0px;
+}
+
+element {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @color4;
+    text-color: @background;
+}

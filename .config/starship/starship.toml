@@ -1,0 +1,18 @@
+add_newline = false
+format = """
+[╭─](#7aa2f7)[  ](bg:#7aa2f7 fg:#15161e)[](fg:#7aa2f7 bg:#3b4261) $directory[](fg:#3b4261 bg:#2e3c64) $git_branch[](fg:#2e3c64)
+[╰─](#7aa2f7) $character
+"""
+
+[directory]
+style = "fg:#a9b1d6 bg:#3b4261"
+format = "[ $path ]($style)"
+
+[git_branch]
+symbol = ""
+style = "fg:#a9b1d6 bg:#2e3c64"
+format = "[ $symbol $branch ]($style)"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[✗](bold red)"

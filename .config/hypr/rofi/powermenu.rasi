@@ -1,0 +1,35 @@
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+
+window {
+    width: 450px;
+    border-radius: 15px;
+    background-color: @background;
+    border: 2px solid;
+    border-color: @color1;
+    padding: 20px;
+}
+
+mainbox {
+    spacing: 15px;
+    background-color: transparent;
+}
+
+listview {
+    lines: 5;
+    background-color: transparent;
+    spacing: 8px;
+    border: 0px;
+}
+
+element {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @color1;
+    text-color: @background;
+}

@@ -1,0 +1,97 @@
+/**
+ * wallpaper-picker.rasi
+ * Rofi theme for the wallpaper picker.
+ * Displays filenames alongside large square thumbnail previews.
+ * Icon size and entry height are driven by -icon-size 72 -eh 2 in the script.
+ */
+
+@import "~/.cache/wal/rofi.rasi"
+@import "shared/fonts.rasi"
+
+configuration {
+    modi:          "dmenu";
+    show-icons:    true;
+    icon-theme:    "hicolor";   /* fallback; actual icons are absolute paths */
+    display-dmenu: "󰸉  Wallpaper";
+}
+
+window {
+    width:            760px;
+    border-radius:    16px;
+    background-color: @background;
+    border:           2px solid;
+    border-color:     @color4;
+    padding:          20px;
+}
+
+mainbox {
+    spacing:          14px;
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius:    10px;
+    padding:          12px 14px;
+    text-color:       @foreground;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @color4;
+    background-color: transparent;
+    padding:          0 8px 0 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @foreground;
+    placeholder:      "Search wallpaper...";
+    placeholder-color: @color8;
+}
+
+listview {
+    lines:            5;
+    columns:          2;
+    background-color: transparent;
+    spacing:          10px;
+    border:           0px;
+    fixed-height:     true;
+    scrollbar:        false;
+}
+
+element {
+    orientation:      horizontal;
+    padding:          10px;
+    border-radius:    10px;
+    background-color: transparent;
+    text-color:       @foreground;
+    spacing:          12px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element selected.normal {
+    background-color: alpha(@color4, 0.25);
+    text-color:       @foreground;
+    border:           1px solid;
+    border-color:     @color4;
+    border-radius:    10px;
+}
+
+element-icon {
+    size:             72px;
+    border-radius:    8px;
+    background-color: transparent;
+}
+
+element-text {
+    vertical-align:   0.5;
+    horizontal-align: 0.0;
+    background-color: transparent;
+    text-color:       inherit;
+}
